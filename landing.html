@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TakeNote - Your Private, Local-First Notebook</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'bunker': {
+                '900': '#303846',
+                '950': '#0d0f12',
+              },
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-bunker-950 text-white antialiased">
+
+    <div class="container mx-auto px-6 py-12">
+        <!-- Header -->
+        <header class="text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4">TakeNote</h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-8">Your private, local-first digital notebook.</p>
+            <a href="/index.html" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300">
+                Launch TakeNote
+            </a>
+            <p class="text-gray-400 mt-4 text-sm">Free & No Sign-up Required</p>
+        </header>
+
+        <!-- Features Section -->
+        <section class="mt-20 md:mt-32">
+            <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-12 text-center">
+                <div class="feature">
+                    <div class="flex justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-2">Markdown Ready</h3>
+                    <p class="text-gray-400">
+                        Format your notes with Markdown. A simple toolbar and live preview make it easy.
+                    </p>
+                </div>
+                <div class="feature">
+                    <div class="flex justify-center mb-4">
+                       <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5.636 18.364a9 9 0 010-12.728m12.728 0a9 9 0 010 12.728m-9.9-2.829a5 5 0 010-7.07m7.072 0a5 5 0 010 7.07M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-2">Works Offline</h3>
+                    <p class="text-gray-400">
+                        As a PWA, TakeNote works perfectly even without an internet connection. Your notes are always available.
+                    </p>
+                </div>
+                <div class="feature">
+                    <div class="flex justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-2">Completely Private</h3>
+                    <p class="text-gray-400">
+                        All your data is stored on your device. Nothing is ever sent to the cloud. Ever.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Install as App Section -->
+        <section class="mt-20 md:mt-32 text-center max-w-2xl mx-auto">
+            <h2 class="text-3xl font-bold mb-4">Install it like an App</h2>
+            <p class="text-gray-300 mb-6">
+                TakeNote is a Progressive Web App (PWA). You can install it on your desktop or mobile home screen for quick access and an offline, native-app experience. Just look for the install button in your browser's address bar.
+            </p>
+             <a href="/index.html" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300">
+                Get Started
+            </a>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-8 mt-16 border-t border-gray-800">
+        <p class="text-gray-400">
+            A simple project.
+            <a href="/README.md" class="text-blue-400 hover:underline">Read the Docs</a> |
+            <a href="/PRIVACY.md" class="text-blue-400 hover:underline">Privacy Policy</a>
+        </p>
+    </footer>
+
+</body>
+</html>

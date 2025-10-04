@@ -1,0 +1,5 @@
+{
+  "name": "TakeNote",
+  "description": "A simple, fluid, and beautiful note-taking app with a local-first architecture. All your data is stored securely on your own device.",
+  "requestFramePermissions": []
+}
